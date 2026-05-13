@@ -28,12 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            LogInPanel = new Panel();
+            panel2 = new Panel();
+            SuspendLayout();
+            // 
+            // LogInPanel
+            // 
+            LogInPanel.Location = new Point(433, 0);
+            LogInPanel.Name = "LogInPanel";
+            LogInPanel.Size = new Size(494, 696);
+            LogInPanel.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            panel2.Location = new Point(-3, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(438, 696);
+            panel2.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(927, 696);
+            Controls.Add(panel2);
+            Controls.Add(LogInPanel);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Name = "Form1";
             Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Panel LogInPanel;
+        private Panel panel2;
     }
 }
