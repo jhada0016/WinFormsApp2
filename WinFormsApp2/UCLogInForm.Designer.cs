@@ -132,6 +132,7 @@
             // button1
             // 
             button1.BackColor = Color.RoyalBlue;
+            button1.FlatStyle = FlatStyle.Popup;
             button1.ForeColor = Color.White;
             button1.Location = new Point(85, 485);
             button1.Name = "button1";
