@@ -148,7 +148,7 @@
             button1.Name = "button1";
             button1.Size = new Size(323, 40);
             button1.TabIndex = 9;
-            button1.Text = "button1";
+            button1.Text = "Create Account";
             button1.UseVisualStyleBackColor = false;
             // 
             // textBox1
