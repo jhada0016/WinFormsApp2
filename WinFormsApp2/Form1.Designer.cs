@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             LogInPanel = new Panel();
             panel2 = new Panel();
             SuspendLayout();
@@ -41,6 +42,7 @@
             // 
             // panel2
             // 
+            panel2.BackgroundImage = (Image)resources.GetObject("panel2.BackgroundImage");
             panel2.Location = new Point(-3, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(438, 696);
@@ -56,12 +58,12 @@
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Panel LogInPanel;
         private Panel panel2;
+        public Panel LogInPanel;
     }
 }

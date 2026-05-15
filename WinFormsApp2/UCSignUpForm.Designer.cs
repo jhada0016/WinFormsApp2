@@ -30,21 +30,21 @@
         {
             label1 = new Label();
             label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
+            FullName = new Label();
+            UserName = new Label();
+            StoreName = new Label();
+            Password = new Label();
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
             button1 = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
+            txtFullName = new TextBox();
+            txtUserName = new TextBox();
+            txtStoreName = new TextBox();
+            txtPassword = new TextBox();
             textBox6 = new TextBox();
-            label10 = new Label();
+            BirthDate = new Label();
+            dtpBirthDate = new DateTimePicker();
             SuspendLayout();
             // 
             // label1
@@ -68,45 +68,45 @@
             label2.TabIndex = 1;
             label2.Text = "Join us and start managing your store smarter.";
             // 
-            // label3
+            // FullName
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(109, 155);
-            label3.Name = "label3";
-            label3.Size = new Size(66, 17);
-            label3.TabIndex = 2;
-            label3.Text = "Full Name";
+            FullName.AutoSize = true;
+            FullName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FullName.Location = new Point(109, 155);
+            FullName.Name = "FullName";
+            FullName.Size = new Size(66, 17);
+            FullName.TabIndex = 2;
+            FullName.Text = "Full Name";
             // 
-            // label4
+            // UserName
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(109, 220);
-            label4.Name = "label4";
-            label4.Size = new Size(74, 17);
-            label4.TabIndex = 3;
-            label4.Text = "User Name";
+            UserName.AutoSize = true;
+            UserName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            UserName.Location = new Point(109, 220);
+            UserName.Name = "UserName";
+            UserName.Size = new Size(74, 17);
+            UserName.TabIndex = 3;
+            UserName.Text = "User Name";
             // 
-            // label5
+            // StoreName
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(109, 282);
-            label5.Name = "label5";
-            label5.Size = new Size(131, 17);
-            label5.TabIndex = 4;
-            label5.Text = "Sari-Sari Store Name";
+            StoreName.AutoSize = true;
+            StoreName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            StoreName.Location = new Point(109, 282);
+            StoreName.Name = "StoreName";
+            StoreName.Size = new Size(131, 17);
+            StoreName.TabIndex = 4;
+            StoreName.Text = "Sari-Sari Store Name";
             // 
-            // label6
+            // Password
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(111, 405);
-            label6.Name = "label6";
-            label6.Size = new Size(64, 17);
-            label6.TabIndex = 5;
-            label6.Text = "Password";
+            Password.AutoSize = true;
+            Password.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Password.Location = new Point(111, 405);
+            Password.Name = "Password";
+            Password.Size = new Size(64, 17);
+            Password.TabIndex = 5;
+            Password.Text = "Password";
             // 
             // label7
             // 
@@ -138,6 +138,7 @@
             label9.Size = new Size(47, 17);
             label9.TabIndex = 8;
             label9.Text = "Sign In";
+            label9.Click += label9_Click;
             // 
             // button1
             // 
@@ -150,46 +151,39 @@
             button1.TabIndex = 9;
             button1.Text = "Create Account";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
-            // textBox1
+            // txtFullName
             // 
-            textBox1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(84, 175);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(323, 25);
-            textBox1.TabIndex = 10;
+            txtFullName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtFullName.Location = new Point(84, 175);
+            txtFullName.Name = "txtFullName";
+            txtFullName.Size = new Size(323, 25);
+            txtFullName.TabIndex = 10;
             // 
-            // textBox2
+            // txtUserName
             // 
-            textBox2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(84, 240);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(323, 25);
-            textBox2.TabIndex = 11;
+            txtUserName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUserName.Location = new Point(84, 240);
+            txtUserName.Name = "txtUserName";
+            txtUserName.Size = new Size(323, 25);
+            txtUserName.TabIndex = 11;
             // 
-            // textBox3
+            // txtStoreName
             // 
-            textBox3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(84, 302);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(323, 25);
-            textBox3.TabIndex = 12;
+            txtStoreName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtStoreName.Location = new Point(84, 302);
+            txtStoreName.Name = "txtStoreName";
+            txtStoreName.Size = new Size(323, 25);
+            txtStoreName.TabIndex = 12;
             // 
-            // textBox4
+            // txtPassword
             // 
-            textBox4.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(84, 368);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(323, 25);
-            textBox4.TabIndex = 13;
-            // 
-            // textBox5
-            // 
-            textBox5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox5.Location = new Point(84, 425);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(323, 25);
-            textBox5.TabIndex = 14;
+            txtPassword.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPassword.Location = new Point(84, 425);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(323, 25);
+            txtPassword.TabIndex = 14;
             // 
             // textBox6
             // 
@@ -199,35 +193,43 @@
             textBox6.Size = new Size(323, 25);
             textBox6.TabIndex = 15;
             // 
-            // label10
+            // BirthDate
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.Location = new Point(109, 348);
-            label10.Name = "label10";
-            label10.Size = new Size(65, 17);
-            label10.TabIndex = 16;
-            label10.Text = "Birth Date";
+            BirthDate.AutoSize = true;
+            BirthDate.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BirthDate.Location = new Point(109, 348);
+            BirthDate.Name = "BirthDate";
+            BirthDate.Size = new Size(65, 17);
+            BirthDate.TabIndex = 16;
+            BirthDate.Text = "Birth Date";
+            // 
+            // dtpBirthDate
+            // 
+            dtpBirthDate.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dtpBirthDate.Location = new Point(84, 368);
+            dtpBirthDate.Name = "dtpBirthDate";
+            dtpBirthDate.Size = new Size(323, 25);
+            dtpBirthDate.TabIndex = 17;
             // 
             // UCSignUpForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(label10);
+            Controls.Add(dtpBirthDate);
+            Controls.Add(BirthDate);
             Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtPassword);
+            Controls.Add(txtStoreName);
+            Controls.Add(txtUserName);
+            Controls.Add(txtFullName);
             Controls.Add(button1);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
+            Controls.Add(Password);
+            Controls.Add(StoreName);
+            Controls.Add(UserName);
+            Controls.Add(FullName);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "UCSignUpForm";
@@ -240,20 +242,20 @@
 
         private Label label1;
         private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
+        private Label FullName;
+        private Label UserName;
+        private Label StoreName;
+        private Label Password;
         private Label label7;
         private Label label8;
         private Label label9;
         private Button button1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
+        private TextBox txtFullName;
+        private TextBox txtUserName;
+        private TextBox txtStoreName;
+        private TextBox txtPassword;
         private TextBox textBox6;
-        private Label label10;
+        private Label BirthDate;
+        private DateTimePicker dtpBirthDate;
     }
 }

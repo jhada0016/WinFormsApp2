@@ -33,8 +33,8 @@
             label2 = new Label();
             label3 = new Label();
             button1 = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtNewPassword = new TextBox();
+            txtConfirmPassword = new TextBox();
             label4 = new Label();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -83,22 +83,23 @@
             button1.TabIndex = 3;
             button1.Text = "Change Password";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
-            // textBox1
+            // txtNewPassword
             // 
-            textBox1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(101, 347);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(293, 25);
-            textBox1.TabIndex = 4;
+            txtNewPassword.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNewPassword.Location = new Point(101, 347);
+            txtNewPassword.Name = "txtNewPassword";
+            txtNewPassword.Size = new Size(293, 25);
+            txtNewPassword.TabIndex = 4;
             // 
-            // textBox2
+            // txtConfirmPassword
             // 
-            textBox2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(101, 417);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(293, 25);
-            textBox2.TabIndex = 5;
+            txtConfirmPassword.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtConfirmPassword.Location = new Point(101, 417);
+            txtConfirmPassword.Name = "txtConfirmPassword";
+            txtConfirmPassword.Size = new Size(293, 25);
+            txtConfirmPassword.TabIndex = 5;
             // 
             // label4
             // 
@@ -127,8 +128,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(pictureBox1);
             Controls.Add(label4);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtConfirmPassword);
+            Controls.Add(txtNewPassword);
             Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -146,9 +147,9 @@
         private Label label2;
         private Label label3;
         private Button button1;
-        private TextBox textBox1;
+        private TextBox txtNewPassword;
         private Label label4;
-        private TextBox textBox2;
+        private TextBox txtConfirmPassword;
         private PictureBox pictureBox1;
     }
 }

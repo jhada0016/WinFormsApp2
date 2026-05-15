@@ -32,12 +32,12 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            textBox1 = new TextBox();
+            txtUserName = new TextBox();
             label6 = new Label();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            txtStoreName = new TextBox();
             button1 = new Button();
             pictureBox1 = new PictureBox();
+            dtpBirthDate = new DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -58,9 +58,9 @@
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.Location = new Point(85, 287);
             label2.Name = "label2";
-            label2.Size = new Size(66, 17);
+            label2.Size = new Size(74, 17);
             label2.TabIndex = 1;
-            label2.Text = "Full Name";
+            label2.Text = "User Name";
             // 
             // label3
             // 
@@ -82,13 +82,13 @@
             label4.TabIndex = 3;
             label4.Text = "Birth Date";
             // 
-            // textBox1
+            // txtUserName
             // 
-            textBox1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(84, 307);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(321, 25);
-            textBox1.TabIndex = 4;
+            txtUserName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUserName.Location = new Point(84, 307);
+            txtUserName.Name = "txtUserName";
+            txtUserName.Size = new Size(321, 25);
+            txtUserName.TabIndex = 4;
             // 
             // label6
             // 
@@ -100,22 +100,15 @@
             label6.Size = new Size(93, 17);
             label6.TabIndex = 6;
             label6.Text = "Back to Sign In";
+            label6.Click += label6_Click;
             // 
-            // textBox2
+            // txtStoreName
             // 
-            textBox2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(84, 368);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(321, 25);
-            textBox2.TabIndex = 7;
-            // 
-            // textBox3
-            // 
-            textBox3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(85, 426);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(321, 25);
-            textBox3.TabIndex = 8;
+            txtStoreName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtStoreName.Location = new Point(84, 368);
+            txtStoreName.Name = "txtStoreName";
+            txtStoreName.Size = new Size(321, 25);
+            txtStoreName.TabIndex = 7;
             // 
             // button1
             // 
@@ -128,6 +121,7 @@
             button1.TabIndex = 9;
             button1.Text = "Verify";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // pictureBox1
             // 
@@ -137,16 +131,24 @@
             pictureBox1.TabIndex = 10;
             pictureBox1.TabStop = false;
             // 
+            // dtpBirthDate
+            // 
+            dtpBirthDate.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dtpBirthDate.Location = new Point(86, 426);
+            dtpBirthDate.Name = "dtpBirthDate";
+            dtpBirthDate.Size = new Size(319, 25);
+            dtpBirthDate.TabIndex = 11;
+            // 
             // UCForgotPass
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(dtpBirthDate);
             Controls.Add(pictureBox1);
             Controls.Add(button1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
+            Controls.Add(txtStoreName);
             Controls.Add(label6);
-            Controls.Add(textBox1);
+            Controls.Add(txtUserName);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -164,11 +166,11 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox textBox1;
+        private TextBox txtUserName;
         private Label label6;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox txtStoreName;
         private Button button1;
         private PictureBox pictureBox1;
+        private DateTimePicker dtpBirthDate;
     }
 }

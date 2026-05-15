@@ -35,9 +35,9 @@
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            button1 = new Button();
+            txtUserName = new TextBox();
+            txtPassword = new TextBox();
+            btnSignIn = new Button();
             SuspendLayout();
             // 
             // label1
@@ -91,6 +91,7 @@
             label5.Size = new Size(114, 17);
             label5.TabIndex = 4;
             label5.Text = "Forgot password?";
+            label5.Click += label5_Click;
             // 
             // label6
             // 
@@ -112,42 +113,44 @@
             label7.Size = new Size(52, 17);
             label7.TabIndex = 6;
             label7.Text = "Sign up";
+            label7.Click += label7_Click;
             // 
-            // textBox1
+            // txtUserName
             // 
-            textBox1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(85, 303);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(320, 25);
-            textBox1.TabIndex = 7;
+            txtUserName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUserName.Location = new Point(85, 303);
+            txtUserName.Name = "txtUserName";
+            txtUserName.Size = new Size(320, 25);
+            txtUserName.TabIndex = 7;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(85, 367);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(320, 25);
-            textBox2.TabIndex = 8;
+            txtPassword.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPassword.Location = new Point(85, 367);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(320, 25);
+            txtPassword.TabIndex = 8;
             // 
-            // button1
+            // btnSignIn
             // 
-            button1.BackColor = Color.RoyalBlue;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(85, 485);
-            button1.Name = "button1";
-            button1.Size = new Size(320, 38);
-            button1.TabIndex = 9;
-            button1.Text = "Sign In";
-            button1.UseVisualStyleBackColor = false;
+            btnSignIn.BackColor = Color.RoyalBlue;
+            btnSignIn.FlatStyle = FlatStyle.Popup;
+            btnSignIn.ForeColor = Color.White;
+            btnSignIn.Location = new Point(85, 485);
+            btnSignIn.Name = "btnSignIn";
+            btnSignIn.Size = new Size(320, 38);
+            btnSignIn.TabIndex = 9;
+            btnSignIn.Text = "Sign In";
+            btnSignIn.UseVisualStyleBackColor = false;
+            btnSignIn.Click += btnSignIn_Click;
             // 
             // UCLogInForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnSignIn);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUserName);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -170,8 +173,8 @@
         private Label label5;
         private Label label6;
         private Label label7;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
+        private TextBox txtUserName;
+        private TextBox txtPassword;
+        private Button btnSignIn;
     }
 }
