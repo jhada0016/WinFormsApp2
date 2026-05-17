@@ -52,13 +52,13 @@ namespace WinFormsApp2
             {
                 con.Open();
 
-                string query = "INSERT INTO products(product_name, price, stock) " +
-                               "VALUES(@product_name, @price, @stock)";
+                string query = "INSERT INTO products(product_name, category, price, stock) " +
+                               "VALUES(@product_name, @category, @price, @stock)";
 
                 MySqlCommand cmd = new MySqlCommand(query, con);
 
                 cmd.Parameters.AddWithValue("@product_name", txtName.Text);
-               
+                cmd.Parameters.AddWithValue("@category", cbCategory.Text);
                 cmd.Parameters.AddWithValue("@price", price);
                 cmd.Parameters.AddWithValue("@stock", stock);
 
@@ -67,6 +67,7 @@ namespace WinFormsApp2
                 MessageBox.Show("Product Added Successfully!");
 
                 con.Close();
+                this.Close();
             }
             catch (Exception ex)
             {

@@ -35,7 +35,8 @@
             txtPrice = new TextBox();
             txtStock = new TextBox();
             btnSave = new Button();
-            button2 = new Button();
+            label3 = new Label();
+            cbCategory = new ComboBox();
             SuspendLayout();
             // 
             // label1
@@ -95,7 +96,7 @@
             // btnSave
             // 
             btnSave.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSave.Location = new Point(62, 294);
+            btnSave.Location = new Point(127, 307);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(87, 34);
             btnSave.TabIndex = 6;
@@ -103,22 +104,33 @@
             btnSave.UseVisualStyleBackColor = true;
             btnSave.Click += btnSave_Click;
             // 
-            // button2
+            // label3
             // 
-            button2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(212, 294);
-            button2.Name = "button2";
-            button2.Size = new Size(87, 34);
-            button2.TabIndex = 7;
-            button2.Text = "Cancel";
-            button2.UseVisualStyleBackColor = true;
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(35, 252);
+            label3.Name = "label3";
+            label3.Size = new Size(67, 17);
+            label3.TabIndex = 8;
+            label3.Text = "Category:";
+            // 
+            // cbCategory
+            // 
+            cbCategory.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbCategory.FormattingEnabled = true;
+            cbCategory.Items.AddRange(new object[] { "Drinks", "Snacks", "Noodles & Pasta", "Canned Goods", "Frozen Foods", "Toiletries", "School Supplies" });
+            cbCategory.Location = new Point(140, 252);
+            cbCategory.Name = "cbCategory";
+            cbCategory.Size = new Size(194, 25);
+            cbCategory.TabIndex = 9;
             // 
             // Products
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(361, 374);
-            Controls.Add(button2);
+            Controls.Add(cbCategory);
+            Controls.Add(label3);
             Controls.Add(btnSave);
             Controls.Add(txtStock);
             Controls.Add(txtPrice);
@@ -142,6 +154,7 @@
         private TextBox txtPrice;
         private TextBox txtStock;
         private Button btnSave;
-        private Button button2;
+        private Label label3;
+        private ComboBox cbCategory;
     }
 }
