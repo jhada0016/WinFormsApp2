@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="LiveChartsCore.SkiaSharpView.WinForms" Version="2.0.4" />
     <PackageReference Include="MySqlConnector" Version="2.5.0" />
   </ItemGroup>
 

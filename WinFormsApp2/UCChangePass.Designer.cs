@@ -45,7 +45,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Navy;
-            label1.Location = new Point(101, 240);
+            label1.Location = new Point(77, 240);
             label1.Name = "label1";
             label1.Size = new Size(284, 37);
             label1.TabIndex = 0;
@@ -55,7 +55,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(131, 327);
+            label2.Location = new Point(101, 327);
             label2.Name = "label2";
             label2.Size = new Size(94, 17);
             label2.TabIndex = 1;
@@ -65,7 +65,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(131, 397);
+            label3.Location = new Point(101, 397);
             label3.Name = "label3";
             label3.Size = new Size(114, 17);
             label3.TabIndex = 2;
@@ -77,7 +77,7 @@
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(101, 509);
+            button1.Location = new Point(77, 508);
             button1.Name = "button1";
             button1.Size = new Size(293, 41);
             button1.TabIndex = 3;
@@ -88,15 +88,16 @@
             // txtNewPassword
             // 
             txtNewPassword.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtNewPassword.Location = new Point(101, 347);
+            txtNewPassword.Location = new Point(77, 347);
             txtNewPassword.Name = "txtNewPassword";
             txtNewPassword.Size = new Size(293, 25);
             txtNewPassword.TabIndex = 4;
             // 
             // txtConfirmPassword
             // 
+            txtConfirmPassword.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtConfirmPassword.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtConfirmPassword.Location = new Point(101, 417);
+            txtConfirmPassword.Location = new Point(77, 417);
             txtConfirmPassword.Name = "txtConfirmPassword";
             txtConfirmPassword.Size = new Size(293, 25);
             txtConfirmPassword.TabIndex = 5;
@@ -106,7 +107,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.Blue;
-            label4.Location = new Point(201, 563);
+            label4.Location = new Point(172, 563);
             label4.Name = "label4";
             label4.Size = new Size(93, 17);
             label4.TabIndex = 6;
@@ -115,7 +116,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(180, 127);
+            pictureBox1.Location = new Point(151, 127);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(132, 110);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -135,7 +136,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "UCChangePass";
-            Size = new Size(494, 696);
+            Size = new Size(441, 696);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -52,7 +52,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Black", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Navy;
-            label1.Location = new Point(118, 33);
+            label1.Location = new Point(84, 80);
             label1.Name = "label1";
             label1.Size = new Size(261, 37);
             label1.TabIndex = 0;
@@ -62,7 +62,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(109, 70);
+            label2.Location = new Point(72, 117);
             label2.Name = "label2";
             label2.Size = new Size(282, 17);
             label2.TabIndex = 1;
@@ -72,7 +72,7 @@
             // 
             FullName.AutoSize = true;
             FullName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            FullName.Location = new Point(109, 155);
+            FullName.Location = new Point(84, 172);
             FullName.Name = "FullName";
             FullName.Size = new Size(66, 17);
             FullName.TabIndex = 2;
@@ -82,7 +82,7 @@
             // 
             UserName.AutoSize = true;
             UserName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            UserName.Location = new Point(109, 220);
+            UserName.Location = new Point(84, 234);
             UserName.Name = "UserName";
             UserName.Size = new Size(74, 17);
             UserName.TabIndex = 3;
@@ -92,7 +92,7 @@
             // 
             StoreName.AutoSize = true;
             StoreName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            StoreName.Location = new Point(109, 282);
+            StoreName.Location = new Point(84, 300);
             StoreName.Name = "StoreName";
             StoreName.Size = new Size(131, 17);
             StoreName.TabIndex = 4;
@@ -102,7 +102,7 @@
             // 
             Password.AutoSize = true;
             Password.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Password.Location = new Point(111, 405);
+            Password.Location = new Point(84, 426);
             Password.Name = "Password";
             Password.Size = new Size(64, 17);
             Password.TabIndex = 5;
@@ -112,7 +112,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(109, 469);
+            label7.Location = new Point(84, 492);
             label7.Name = "label7";
             label7.Size = new Size(114, 17);
             label7.TabIndex = 6;
@@ -122,7 +122,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(129, 622);
+            label8.Location = new Point(99, 639);
             label8.Name = "label8";
             label8.Size = new Size(156, 17);
             label8.TabIndex = 7;
@@ -133,7 +133,7 @@
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.Blue;
-            label9.Location = new Point(291, 622);
+            label9.Location = new Point(261, 639);
             label9.Name = "label9";
             label9.Size = new Size(47, 17);
             label9.TabIndex = 8;
@@ -145,7 +145,7 @@
             button1.BackColor = Color.RoyalBlue;
             button1.FlatStyle = FlatStyle.Popup;
             button1.ForeColor = Color.White;
-            button1.Location = new Point(84, 569);
+            button1.Location = new Point(58, 581);
             button1.Name = "button1";
             button1.Size = new Size(323, 40);
             button1.TabIndex = 9;
@@ -156,7 +156,7 @@
             // txtFullName
             // 
             txtFullName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtFullName.Location = new Point(84, 175);
+            txtFullName.Location = new Point(58, 192);
             txtFullName.Name = "txtFullName";
             txtFullName.Size = new Size(323, 25);
             txtFullName.TabIndex = 10;
@@ -164,7 +164,7 @@
             // txtUserName
             // 
             txtUserName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUserName.Location = new Point(84, 240);
+            txtUserName.Location = new Point(58, 254);
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(323, 25);
             txtUserName.TabIndex = 11;
@@ -172,7 +172,7 @@
             // txtStoreName
             // 
             txtStoreName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtStoreName.Location = new Point(84, 302);
+            txtStoreName.Location = new Point(58, 320);
             txtStoreName.Name = "txtStoreName";
             txtStoreName.Size = new Size(323, 25);
             txtStoreName.TabIndex = 12;
@@ -180,7 +180,7 @@
             // txtPassword
             // 
             txtPassword.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPassword.Location = new Point(84, 425);
+            txtPassword.Location = new Point(58, 446);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(323, 25);
             txtPassword.TabIndex = 14;
@@ -188,7 +188,7 @@
             // textBox6
             // 
             textBox6.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox6.Location = new Point(84, 489);
+            textBox6.Location = new Point(58, 512);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(323, 25);
             textBox6.TabIndex = 15;
@@ -197,7 +197,7 @@
             // 
             BirthDate.AutoSize = true;
             BirthDate.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            BirthDate.Location = new Point(109, 348);
+            BirthDate.Location = new Point(84, 363);
             BirthDate.Name = "BirthDate";
             BirthDate.Size = new Size(65, 17);
             BirthDate.TabIndex = 16;
@@ -206,7 +206,7 @@
             // dtpBirthDate
             // 
             dtpBirthDate.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dtpBirthDate.Location = new Point(84, 368);
+            dtpBirthDate.Location = new Point(58, 383);
             dtpBirthDate.Name = "dtpBirthDate";
             dtpBirthDate.Size = new Size(323, 25);
             dtpBirthDate.TabIndex = 17;
@@ -233,7 +233,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "UCSignUpForm";
-            Size = new Size(494, 696);
+            Size = new Size(441, 696);
             ResumeLayout(false);
             PerformLayout();
         }

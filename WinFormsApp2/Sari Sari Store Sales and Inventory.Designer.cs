@@ -30,15 +30,15 @@
         {
             panel1 = new Panel();
             button6 = new Button();
-            button5 = new Button();
-            button2 = new Button();
+            btnReport = new Button();
+            btnInventory = new Button();
             button1 = new Button();
-            button4 = new Button();
-            button3 = new Button();
+            btnSales = new Button();
+            btnProduct = new Button();
             pictureBox1 = new PictureBox();
             label2 = new Label();
             label1 = new Label();
-            panel2 = new Panel();
+            panelMain = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -47,17 +47,17 @@
             // 
             panel1.BackColor = Color.MidnightBlue;
             panel1.Controls.Add(button6);
-            panel1.Controls.Add(button5);
-            panel1.Controls.Add(button2);
+            panel1.Controls.Add(btnReport);
+            panel1.Controls.Add(btnInventory);
             panel1.Controls.Add(button1);
-            panel1.Controls.Add(button4);
-            panel1.Controls.Add(button3);
+            panel1.Controls.Add(btnSales);
+            panel1.Controls.Add(btnProduct);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(3, 1);
+            panel1.Location = new Point(-1, 1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(283, 620);
+            panel1.Size = new Size(265, 692);
             panel1.TabIndex = 0;
             // 
             // button6
@@ -66,126 +66,137 @@
             button6.FlatStyle = FlatStyle.Popup;
             button6.ForeColor = SystemColors.ButtonHighlight;
             button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(0, 412);
+            button6.Location = new Point(46, 636);
             button6.Name = "button6";
             button6.Size = new Size(167, 34);
             button6.TabIndex = 9;
             button6.Text = "Log Out";
             button6.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnReport
             // 
-            button5.BackColor = Color.MidnightBlue;
-            button5.FlatStyle = FlatStyle.Popup;
-            button5.ForeColor = SystemColors.ButtonHighlight;
-            button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(0, 240);
-            button5.Name = "button5";
-            button5.Size = new Size(167, 34);
-            button5.TabIndex = 8;
-            button5.Text = "Report";
-            button5.UseVisualStyleBackColor = false;
+            btnReport.BackColor = Color.MidnightBlue;
+            btnReport.FlatStyle = FlatStyle.Popup;
+            btnReport.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnReport.ForeColor = SystemColors.ButtonHighlight;
+            btnReport.ImageAlign = ContentAlignment.MiddleLeft;
+            btnReport.Location = new Point(27, 462);
+            btnReport.Name = "btnReport";
+            btnReport.Size = new Size(197, 48);
+            btnReport.TabIndex = 8;
+            btnReport.Text = "Report";
+            btnReport.UseVisualStyleBackColor = false;
+            btnReport.Click += btnReport_Click;
             // 
-            // button2
+            // btnInventory
             // 
-            button2.BackColor = Color.MidnightBlue;
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(0, 200);
-            button2.Name = "button2";
-            button2.Size = new Size(167, 34);
-            button2.TabIndex = 6;
-            button2.Text = "Inventory";
-            button2.UseVisualStyleBackColor = false;
+            btnInventory.BackColor = Color.MidnightBlue;
+            btnInventory.FlatStyle = FlatStyle.Popup;
+            btnInventory.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnInventory.ForeColor = SystemColors.ButtonHighlight;
+            btnInventory.ImageAlign = ContentAlignment.MiddleLeft;
+            btnInventory.Location = new Point(27, 381);
+            btnInventory.Name = "btnInventory";
+            btnInventory.Size = new Size(197, 50);
+            btnInventory.TabIndex = 6;
+            btnInventory.Text = "Inventory";
+            btnInventory.UseVisualStyleBackColor = false;
+            btnInventory.Click += btnInventory_Click;
             // 
             // button1
             // 
             button1.BackColor = Color.MidnightBlue;
             button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ButtonHighlight;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(0, 80);
+            button1.Location = new Point(27, 149);
             button1.Name = "button1";
-            button1.Size = new Size(167, 34);
+            button1.Size = new Size(197, 50);
             button1.TabIndex = 7;
             button1.Text = "Dashboard";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
-            // button4
+            // btnSales
             // 
-            button4.BackColor = Color.MidnightBlue;
-            button4.FlatStyle = FlatStyle.Popup;
-            button4.ForeColor = SystemColors.ButtonHighlight;
-            button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(0, 160);
-            button4.Name = "button4";
-            button4.Size = new Size(167, 34);
-            button4.TabIndex = 6;
-            button4.Text = "Sales";
-            button4.UseVisualStyleBackColor = false;
+            btnSales.BackColor = Color.MidnightBlue;
+            btnSales.FlatStyle = FlatStyle.Popup;
+            btnSales.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSales.ForeColor = SystemColors.ButtonHighlight;
+            btnSales.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSales.Location = new Point(27, 298);
+            btnSales.Name = "btnSales";
+            btnSales.Size = new Size(197, 48);
+            btnSales.TabIndex = 6;
+            btnSales.Text = "Sales";
+            btnSales.UseVisualStyleBackColor = false;
+            btnSales.Click += btnSales_Click;
             // 
-            // button3
+            // btnProduct
             // 
-            button3.BackColor = Color.MidnightBlue;
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.ForeColor = SystemColors.ButtonHighlight;
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(0, 120);
-            button3.Name = "button3";
-            button3.Size = new Size(167, 34);
-            button3.TabIndex = 5;
-            button3.Text = "Product";
-            button3.UseVisualStyleBackColor = false;
+            btnProduct.BackColor = Color.MidnightBlue;
+            btnProduct.FlatStyle = FlatStyle.Popup;
+            btnProduct.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnProduct.ForeColor = SystemColors.ButtonHighlight;
+            btnProduct.ImageAlign = ContentAlignment.MiddleLeft;
+            btnProduct.Location = new Point(27, 222);
+            btnProduct.Name = "btnProduct";
+            btnProduct.Size = new Size(197, 44);
+            btnProduct.TabIndex = 5;
+            btnProduct.Text = "Product";
+            btnProduct.UseVisualStyleBackColor = false;
+            btnProduct.Click += btnProduct_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Location = new Point(9, 11);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(35, 35);
+            pictureBox1.Size = new Size(76, 87);
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 6F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(46, 34);
+            label2.Location = new Point(91, 58);
             label2.Name = "label2";
-            label2.Size = new Size(118, 11);
+            label2.Size = new Size(164, 13);
             label2.TabIndex = 1;
             label2.Text = "INVENTORY AND SALES SYSTEM";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(50, 21);
+            label1.Location = new Point(105, 29);
             label1.Name = "label1";
-            label1.Size = new Size(101, 13);
+            label1.Size = new Size(132, 20);
             label1.TabIndex = 0;
-            label1.Text = "SARI - SARI STORE";
+            label1.Text = "SARI-SARI STORE";
             label1.Click += label1_Click;
             // 
-            // panel2
+            // panelMain
             // 
-            panel2.BackColor = Color.Transparent;
-            panel2.Location = new Point(306, 1);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(913, 620);
-            panel2.TabIndex = 1;
+            panelMain.BackColor = Color.Transparent;
+            panelMain.Location = new Point(260, 1);
+            panelMain.Name = "panelMain";
+            panelMain.Size = new Size(958, 692);
+            panelMain.TabIndex = 1;
             // 
             // Sari_Sari_Store_Sales_and_Inventory
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1218, 621);
-            Controls.Add(panel2);
+            ClientSize = new Size(1218, 692);
+            Controls.Add(panelMain);
             Controls.Add(panel1);
             Name = "Sari_Sari_Store_Sales_and_Inventory";
             Text = "Sari_Sari_Store_Sales_and_Inventory";
+            Load += Sari_Sari_Store_Sales_and_Inventory_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -196,14 +207,14 @@
 
         private Panel panel1;
         private Label label1;
-        private Panel panel2;
+        private Panel panelMain;
         private Label label2;
         private PictureBox pictureBox1;
         private Button button1;
-        private Button button4;
-        private Button button3;
+        private Button btnSales;
+        private Button btnProduct;
         private Button button6;
-        private Button button5;
-        private Button button2;
+        private Button btnReport;
+        private Button btnInventory;
     }
 }

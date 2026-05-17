@@ -46,7 +46,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Navy;
-            label1.Location = new Point(127, 230);
+            label1.Location = new Point(95, 233);
             label1.Name = "label1";
             label1.Size = new Size(252, 30);
             label1.TabIndex = 0;
@@ -85,7 +85,7 @@
             // txtUserName
             // 
             txtUserName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUserName.Location = new Point(84, 307);
+            txtUserName.Location = new Point(58, 307);
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(321, 25);
             txtUserName.TabIndex = 4;
@@ -95,7 +95,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.Blue;
-            label6.Location = new Point(199, 595);
+            label6.Location = new Point(171, 596);
             label6.Name = "label6";
             label6.Size = new Size(93, 17);
             label6.TabIndex = 6;
@@ -105,7 +105,7 @@
             // txtStoreName
             // 
             txtStoreName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtStoreName.Location = new Point(84, 368);
+            txtStoreName.Location = new Point(58, 368);
             txtStoreName.Name = "txtStoreName";
             txtStoreName.Size = new Size(321, 25);
             txtStoreName.TabIndex = 7;
@@ -115,7 +115,7 @@
             button1.BackColor = Color.RoyalBlue;
             button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(84, 553);
+            button1.Location = new Point(58, 544);
             button1.Name = "button1";
             button1.Size = new Size(321, 39);
             button1.TabIndex = 9;
@@ -125,16 +125,18 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(199, 138);
+            pictureBox1.Image = Properties.Resources.browser;
+            pictureBox1.Location = new Point(156, 136);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(102, 80);
+            pictureBox1.Size = new Size(119, 94);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 10;
             pictureBox1.TabStop = false;
             // 
             // dtpBirthDate
             // 
             dtpBirthDate.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dtpBirthDate.Location = new Point(86, 426);
+            dtpBirthDate.Location = new Point(60, 426);
             dtpBirthDate.Name = "dtpBirthDate";
             dtpBirthDate.Size = new Size(319, 25);
             dtpBirthDate.TabIndex = 11;
@@ -154,7 +156,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "UCForgotPass";
-            Size = new Size(494, 696);
+            Size = new Size(441, 696);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

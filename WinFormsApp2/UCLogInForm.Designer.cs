@@ -42,10 +42,11 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Black", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Navy;
-            label1.Location = new Point(166, 148);
+            label1.Location = new Point(138, 148);
             label1.Name = "label1";
             label1.Size = new Size(165, 37);
             label1.TabIndex = 0;
@@ -55,7 +56,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(141, 185);
+            label2.Location = new Point(110, 185);
             label2.Name = "label2";
             label2.Size = new Size(214, 17);
             label2.TabIndex = 1;
@@ -65,7 +66,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(110, 283);
+            label3.Location = new Point(85, 283);
             label3.Name = "label3";
             label3.Size = new Size(74, 17);
             label3.TabIndex = 2;
@@ -75,7 +76,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(110, 347);
+            label4.Location = new Point(85, 347);
             label4.Name = "label4";
             label4.Size = new Size(64, 17);
             label4.TabIndex = 3;
@@ -86,7 +87,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.Blue;
-            label5.Location = new Point(291, 395);
+            label5.Location = new Point(270, 395);
             label5.Name = "label5";
             label5.Size = new Size(114, 17);
             label5.TabIndex = 4;
@@ -97,7 +98,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(141, 536);
+            label6.Location = new Point(120, 536);
             label6.Name = "label6";
             label6.Size = new Size(143, 17);
             label6.TabIndex = 5;
@@ -108,7 +109,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.Blue;
-            label7.Location = new Point(290, 536);
+            label7.Location = new Point(260, 536);
             label7.Name = "label7";
             label7.Size = new Size(52, 17);
             label7.TabIndex = 6;
@@ -118,7 +119,7 @@
             // txtUserName
             // 
             txtUserName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUserName.Location = new Point(85, 303);
+            txtUserName.Location = new Point(64, 303);
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(320, 25);
             txtUserName.TabIndex = 7;
@@ -126,7 +127,7 @@
             // txtPassword
             // 
             txtPassword.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPassword.Location = new Point(85, 367);
+            txtPassword.Location = new Point(64, 367);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(320, 25);
             txtPassword.TabIndex = 8;
@@ -136,7 +137,7 @@
             btnSignIn.BackColor = Color.RoyalBlue;
             btnSignIn.FlatStyle = FlatStyle.Popup;
             btnSignIn.ForeColor = Color.White;
-            btnSignIn.Location = new Point(85, 485);
+            btnSignIn.Location = new Point(64, 483);
             btnSignIn.Name = "btnSignIn";
             btnSignIn.Size = new Size(320, 38);
             btnSignIn.TabIndex = 9;
@@ -159,7 +160,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "UCLogInForm";
-            Size = new Size(494, 696);
+            Size = new Size(441, 696);
             ResumeLayout(false);
             PerformLayout();
         }
