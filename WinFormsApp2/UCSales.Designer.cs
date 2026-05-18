@@ -30,190 +30,174 @@
         {
             label18 = new Label();
             dataGridView1 = new DataGridView();
+            dgvCart = new DataGridView();
+            btnAddtoCart = new Button();
+            btnRemove = new Button();
+            btnCheckout = new Button();
+            txtSearch = new TextBox();
+            lblTotal = new Label();
             panel1 = new Panel();
-            button2 = new Button();
-            button1 = new Button();
-            label5 = new Label();
-            label4 = new Label();
-            textBox1 = new TextBox();
-            label3 = new Label();
-            checkBox3 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox1 = new CheckBox();
             label2 = new Label();
-            comboBox1 = new ComboBox();
+            panel2 = new Panel();
             label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvCart).BeginInit();
             panel1.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // label18
             // 
             label18.AutoSize = true;
-            label18.Font = new Font("Cambria", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label18.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label18.ForeColor = Color.Navy;
-            label18.Location = new Point(15, 16);
+            label18.Location = new Point(40, 28);
             label18.Name = "label18";
-            label18.Size = new Size(76, 32);
+            label18.Size = new Size(82, 37);
             label18.TabIndex = 18;
             label18.Text = "Sales";
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(15, 86);
+            dataGridView1.Location = new Point(40, 167);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(519, 312);
+            dataGridView1.Size = new Size(389, 406);
             dataGridView1.TabIndex = 19;
+            // 
+            // dgvCart
+            // 
+            dgvCart.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvCart.Location = new Point(473, 112);
+            dgvCart.Name = "dgvCart";
+            dgvCart.Size = new Size(442, 317);
+            dgvCart.TabIndex = 20;
+            dgvCart.CellEndEdit += dgvCart_CellEndEdit;
+            // 
+            // btnAddtoCart
+            // 
+            btnAddtoCart.BackColor = Color.Orange;
+            btnAddtoCart.FlatStyle = FlatStyle.Popup;
+            btnAddtoCart.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAddtoCart.ForeColor = Color.White;
+            btnAddtoCart.Location = new Point(21, 23);
+            btnAddtoCart.Name = "btnAddtoCart";
+            btnAddtoCart.Size = new Size(110, 38);
+            btnAddtoCart.TabIndex = 21;
+            btnAddtoCart.Text = "Add to cart";
+            btnAddtoCart.UseVisualStyleBackColor = false;
+            btnAddtoCart.Click += btnAddtoCart_Click;
+            // 
+            // btnRemove
+            // 
+            btnRemove.BackColor = Color.Red;
+            btnRemove.FlatStyle = FlatStyle.Popup;
+            btnRemove.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRemove.ForeColor = Color.White;
+            btnRemove.Location = new Point(151, 23);
+            btnRemove.Name = "btnRemove";
+            btnRemove.Size = new Size(99, 38);
+            btnRemove.TabIndex = 22;
+            btnRemove.Text = "Remove";
+            btnRemove.UseVisualStyleBackColor = false;
+            btnRemove.Click += btnRemove_Click;
+            // 
+            // btnCheckout
+            // 
+            btnCheckout.BackColor = Color.Green;
+            btnCheckout.FlatStyle = FlatStyle.Popup;
+            btnCheckout.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCheckout.ForeColor = Color.White;
+            btnCheckout.Location = new Point(278, 23);
+            btnCheckout.Name = "btnCheckout";
+            btnCheckout.Size = new Size(134, 38);
+            btnCheckout.TabIndex = 23;
+            btnCheckout.Text = "Check out";
+            btnCheckout.UseVisualStyleBackColor = false;
+            btnCheckout.Click += btnCheckout_Click;
+            // 
+            // txtSearch
+            // 
+            txtSearch.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtSearch.Location = new Point(155, 131);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(274, 25);
+            txtSearch.TabIndex = 24;
+            txtSearch.TextChanged += txtSearch_TextChanged;
+            // 
+            // lblTotal
+            // 
+            lblTotal.AutoSize = true;
+            lblTotal.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTotal.Location = new Point(20, 9);
+            lblTotal.Name = "lblTotal";
+            lblTotal.Size = new Size(65, 25);
+            lblTotal.TabIndex = 25;
+            lblTotal.Text = "label1";
             // 
             // panel1
             // 
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(textBox1);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(checkBox3);
-            panel1.Controls.Add(checkBox2);
-            panel1.Controls.Add(checkBox1);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(comboBox1);
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(550, 86);
+            panel1.BackColor = Color.White;
+            panel1.Controls.Add(btnAddtoCart);
+            panel1.Controls.Add(btnRemove);
+            panel1.Controls.Add(btnCheckout);
+            panel1.Location = new Point(473, 488);
             panel1.Name = "panel1";
-            panel1.Size = new Size(290, 382);
-            panel1.TabIndex = 20;
-            // 
-            // button2
-            // 
-            button2.Font = new Font("Calibri", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(143, 329);
-            button2.Name = "button2";
-            button2.Size = new Size(105, 35);
-            button2.TabIndex = 11;
-            button2.Text = "Complete Sale";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            button1.Font = new Font("Calibri", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(62, 329);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 35);
-            button1.TabIndex = 10;
-            button1.Text = "Hold Sale";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(27, 297);
-            label5.Name = "label5";
-            label5.Size = new Size(0, 15);
-            label5.TabIndex = 9;
-            label5.Click += label5_Click;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(18, 261);
-            label4.Name = "label4";
-            label4.Size = new Size(59, 19);
-            label4.TabIndex = 8;
-            label4.Text = "Change";
-            label4.Click += label4_Click;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(18, 224);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(252, 23);
-            textBox1.TabIndex = 7;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(18, 193);
-            label3.Name = "label3";
-            label3.Size = new Size(133, 19);
-            label3.TabIndex = 6;
-            label3.Text = "Amount Tendered";
-            // 
-            // checkBox3
-            // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(27, 161);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(57, 19);
-            checkBox3.TabIndex = 5;
-            checkBox3.Text = "CARD";
-            checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(27, 136);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(65, 19);
-            checkBox2.TabIndex = 4;
-            checkBox2.Text = "GCASH";
-            checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(27, 111);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(57, 19);
-            checkBox1.TabIndex = 3;
-            checkBox1.Text = "CASH";
-            checkBox1.UseVisualStyleBackColor = true;
+            panel1.Size = new Size(442, 85);
+            panel1.TabIndex = 26;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(18, 89);
+            label2.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Navy;
+            label2.Location = new Point(473, 72);
             label2.Name = "label2";
-            label2.Size = new Size(129, 19);
-            label2.TabIndex = 2;
-            label2.Text = "Payment Method";
+            label2.Size = new Size(72, 37);
+            label2.TabIndex = 28;
+            label2.Text = "Cart";
             // 
-            // comboBox1
+            // panel2
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(18, 37);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(252, 23);
-            comboBox1.TabIndex = 1;
+            panel2.BackColor = Color.White;
+            panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(lblTotal);
+            panel2.Location = new Point(473, 435);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(442, 47);
+            panel2.TabIndex = 29;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(18, 15);
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(40, 134);
             label1.Name = "label1";
-            label1.Size = new Size(74, 19);
-            label1.TabIndex = 0;
-            label1.Text = "Costumer";
-            label1.Click += label1_Click;
+            label1.Size = new Size(110, 17);
+            label1.TabIndex = 30;
+            label1.Text = "Search Products:";
             // 
             // UCSales
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.InactiveBorder;
+            Controls.Add(label1);
+            Controls.Add(panel2);
+            Controls.Add(label2);
             Controls.Add(panel1);
+            Controls.Add(txtSearch);
+            Controls.Add(dgvCart);
             Controls.Add(dataGridView1);
             Controls.Add(label18);
             Name = "UCSales";
-            Size = new Size(861, 532);
+            Size = new Size(958, 692);
+            Load += UCSales_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvCart).EndInit();
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -222,18 +206,15 @@
 
         private Label label18;
         private DataGridView dataGridView1;
+        private DataGridView dgvCart;
+        private Button btnAddtoCart;
+        private Button btnRemove;
+        private Button btnCheckout;
+        private TextBox txtSearch;
+        private Label lblTotal;
         private Panel panel1;
-        private Label label1;
         private Label label2;
-        private ComboBox comboBox1;
-        private CheckBox checkBox3;
-        private CheckBox checkBox2;
-        private CheckBox checkBox1;
-        private Label label5;
-        private Label label4;
-        private TextBox textBox1;
-        private Label label3;
-        private Button button2;
-        private Button button1;
+        private Panel panel2;
+        private Label label1;
     }
 }

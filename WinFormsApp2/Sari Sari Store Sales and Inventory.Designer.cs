@@ -35,12 +35,10 @@
             button1 = new Button();
             btnSales = new Button();
             btnProduct = new Button();
-            pictureBox1 = new PictureBox();
             label2 = new Label();
             label1 = new Label();
             panelMain = new Panel();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -52,7 +50,6 @@
             panel1.Controls.Add(button1);
             panel1.Controls.Add(btnSales);
             panel1.Controls.Add(btnProduct);
-            panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(-1, 1);
@@ -64,11 +61,12 @@
             // 
             button6.BackColor = Color.MidnightBlue;
             button6.FlatStyle = FlatStyle.Popup;
+            button6.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button6.ForeColor = SystemColors.ButtonHighlight;
             button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(46, 636);
+            button6.Location = new Point(27, 631);
             button6.Name = "button6";
-            button6.Size = new Size(167, 34);
+            button6.Size = new Size(197, 39);
             button6.TabIndex = 9;
             button6.Text = "Log Out";
             button6.UseVisualStyleBackColor = false;
@@ -148,20 +146,12 @@
             btnProduct.UseVisualStyleBackColor = false;
             btnProduct.Click += btnProduct_Click;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(9, 11);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(76, 87);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(91, 58);
+            label2.Location = new Point(46, 67);
             label2.Name = "label2";
             label2.Size = new Size(164, 13);
             label2.TabIndex = 1;
@@ -172,7 +162,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(105, 29);
+            label1.Location = new Point(61, 47);
             label1.Name = "label1";
             label1.Size = new Size(132, 20);
             label1.TabIndex = 0;
@@ -199,7 +189,6 @@
             Load += Sari_Sari_Store_Sales_and_Inventory_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -209,7 +198,6 @@
         private Label label1;
         private Panel panelMain;
         private Label label2;
-        private PictureBox pictureBox1;
         private Button button1;
         private Button btnSales;
         private Button btnProduct;

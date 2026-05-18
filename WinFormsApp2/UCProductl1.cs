@@ -13,28 +13,89 @@ namespace WinFormsApp2
     public partial class UCProductl1 : UserControl
     {
         int selectedID;
+
+        private void StyleGrid(DataGridView dgv)
+        {
+            // READ ONLY
+            dgv.ReadOnly = true;
+
+            // DISABLE EXTRA FEATURES
+            dgv.AllowUserToAddRows = false;
+            dgv.AllowUserToDeleteRows = false;
+
+            dgv.AllowUserToResizeRows = false;
+            dgv.AllowUserToResizeColumns = false;
+
+            // SELECT WHOLE ROW
+            dgv.SelectionMode =
+                DataGridViewSelectionMode.FullRowSelect;
+
+            dgv.MultiSelect = false;
+
+            // HIDE ROW HEADER
+            dgv.RowHeadersVisible = false;
+
+            // AUTO FILL COLUMNS
+            dgv.AutoSizeColumnsMode =
+                DataGridViewAutoSizeColumnsMode.Fill;
+
+            // CLEAN BACKGROUND
+            dgv.BackgroundColor = Color.White;
+
+            dgv.BorderStyle = BorderStyle.None;
+
+            // REMOVE GRID LINES
+            dgv.CellBorderStyle =
+                DataGridViewCellBorderStyle.None;
+
+            dgv.GridColor = Color.White;
+
+            // HEADER DESIGN
+            dgv.EnableHeadersVisualStyles = false;
+
+            dgv.ColumnHeadersBorderStyle =
+                DataGridViewHeaderBorderStyle.None;
+
+            dgv.ColumnHeadersDefaultCellStyle.BackColor =
+                Color.FromArgb(35, 35, 35);
+
+            dgv.ColumnHeadersDefaultCellStyle.ForeColor =
+                Color.White;
+
+            dgv.ColumnHeadersDefaultCellStyle.Font =
+                new Font("Segoe UI", 10, FontStyle.Bold);
+
+            dgv.ColumnHeadersHeight = 40;
+
+            // ROW DESIGN
+            dgv.DefaultCellStyle.Font =
+                new Font("Segoe UI", 10);
+
+            dgv.DefaultCellStyle.BackColor =
+                Color.White;
+
+            dgv.DefaultCellStyle.ForeColor =
+                Color.Black;
+
+            // MODERN SELECTION COLOR
+            dgv.DefaultCellStyle.SelectionBackColor =
+                Color.FromArgb(230, 230, 230);
+
+            dgv.DefaultCellStyle.SelectionForeColor =
+                Color.Black;
+
+            // ALTERNATE ROW COLOR
+            dgv.AlternatingRowsDefaultCellStyle.BackColor =
+                Color.FromArgb(248, 248, 248);
+
+            // ROW HEIGHT
+            dgv.RowTemplate.Height = 38;
+        }
         public UCProductl1()
         {
             InitializeComponent();
 
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray;
-            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.DarkBlue;
-            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.White;
-            dataGridView1.BackgroundColor = Color.White;
-
-            dataGridView1.EnableHeadersVisualStyles = false;
-            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.Navy;
-            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.RowHeadersVisible = false;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.MultiSelect = false;
-            dataGridView1.AllowUserToAddRows = false;
-            // IMPORTANT
-            dataGridView1.ReadOnly = true;
+            StyleGrid(dgvProduct);
 
             LoadProducts();
         }
@@ -56,8 +117,8 @@ namespace WinFormsApp2
 
                 adapter.Fill(table);
 
-                dataGridView1.DataSource = table;
-                dataGridView1.Columns[0].Visible = false;
+                dgvProduct.DataSource = table;
+                dgvProduct.Columns[0].Visible = false;
 
                 con.Close();
             }
@@ -84,7 +145,7 @@ namespace WinFormsApp2
         {
             if (e.RowIndex >= 0)
             {
-                selectedID = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value);
+                selectedID = Convert.ToInt32(dgvProduct.Rows[e.RowIndex].Cells[0].Value);
             }
         }
 
@@ -135,25 +196,25 @@ namespace WinFormsApp2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            if (dgvProduct.SelectedRows.Count > 0)
             {
                 int id = Convert.ToInt32(
-                    dataGridView1.SelectedRows[0].Cells[0].Value
+                    dgvProduct.SelectedRows[0].Cells[0].Value
                 );
 
-                string name = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                string name = dgvProduct.SelectedRows[0].Cells[1].Value.ToString();
 
 
 
                 decimal price = Convert.ToDecimal(
-                    dataGridView1.SelectedRows[0].Cells[2].Value
+                    dgvProduct.SelectedRows[0].Cells[2].Value
                 );
 
                 int stock = Convert.ToInt32(
-                    dataGridView1.SelectedRows[0].Cells[3].Value
+                    dgvProduct.SelectedRows[0].Cells[3].Value
 
                 );
-                string category = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                string category = dgvProduct.SelectedRows[0].Cells[4].Value.ToString();
 
                 EditProductForm editForm = new EditProductForm(
                     id,
@@ -192,10 +253,10 @@ namespace WinFormsApp2
 
                 adapter.Fill(table);
 
-                dataGridView1.DataSource = table;
+                dgvProduct.DataSource = table;
 
                 // HIDE ID COLUMN
-                dataGridView1.Columns[0].Visible = false;
+                dgvProduct.Columns[0].Visible = false;
 
                 con.Close();
             }

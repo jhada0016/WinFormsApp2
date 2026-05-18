@@ -32,9 +32,9 @@
             btnAdd = new Button();
             button2 = new Button();
             btnDelete = new Button();
-            dataGridView1 = new DataGridView();
+            dgvProduct = new DataGridView();
             txtSearch = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvProduct).BeginInit();
             SuspendLayout();
             // 
             // label18
@@ -90,14 +90,14 @@
             btnDelete.UseVisualStyleBackColor = false;
             btnDelete.Click += btnDelete_Click;
             // 
-            // dataGridView1
+            // dgvProduct
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(49, 189);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(853, 459);
-            dataGridView1.TabIndex = 21;
-            dataGridView1.CellClick += dataGridView1_CellClick;
+            dgvProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvProduct.Location = new Point(49, 189);
+            dgvProduct.Name = "dgvProduct";
+            dgvProduct.Size = new Size(853, 459);
+            dgvProduct.TabIndex = 21;
+            dgvProduct.CellClick += dataGridView1_CellClick;
             // 
             // txtSearch
             // 
@@ -114,7 +114,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(txtSearch);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvProduct);
             Controls.Add(btnDelete);
             Controls.Add(button2);
             Controls.Add(btnAdd);
@@ -122,7 +122,7 @@
             Name = "UCProductl1";
             Size = new Size(958, 692);
             Load += UCProductl1_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvProduct).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -133,7 +133,7 @@
         private Button btnAdd;
         private Button button2;
         private Button btnDelete;
-        private DataGridView dataGridView1;
+        private DataGridView dgvProduct;
         private TextBox txtSearch;
     }
 }
